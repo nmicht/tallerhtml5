@@ -1,0 +1,1620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Taller de HTML5</title>
+<!-- metadata -->
+<meta name="generator" content="Bluefish 2.0.1" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20050728" />
+<meta name="author" content="Michelle Torres" />
+<meta name="company" content="Complex Spiral Consulting" />
+<meta charset="utf8" />
+<meta content="Taller de HTML5">
+<link rel="shortcut icon" href="img/favicon.ico" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>Michelle Torres</h1>
+<h2>Taller de HTML5</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<img src="img/html5_logo.png" alt="HTML" >
+<h1>Taller de HTML5</h1>
+<h3>Michelle Torres</h3>
+<h4>Consultor TI</h4>
+</div>
+
+<!----------------------- Indice1 ---------------------->
+<div class="slide">
+<h1>Índice</h1>
+<ol>
+<li>Requisitos para trabajar</li>		
+<li>HTML</li>	
+<li>CSS</li>
+<li>Etiquetas en HTML</li>
+<li>Estructura del documento HTML 5</li>
+<li>Guardar el archivo</li>
+</ol>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Indice2 ---------------------->
+<div class="slide">
+<h1>Índice</h1>
+<ol>
+<li value="7">Comentarios</li>
+<li>Texto en HTML</li>
+<li>Párrafos</li>
+<li>Saltos de línea</li>
+<li>Títulos</li>
+<li>Citas</li>
+</ol>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Indice3 ---------------------->
+<div class="slide">
+<h1>Índice</h1>
+<ol>
+<li value="13">Énfasis al texto</li>
+<li>Texto preformateado</li>	
+<li>Acrónimos y abreviaturas</li>	
+<li>Etiquetas de frases</li>	
+<li>Enlaces</li>	
+<li>Listas</li>	
+</ol>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Indice4 ---------------------->
+<div class="slide">
+<h1>Índice</h1>
+<ol>
+<li value="19">Imágenes</li>
+<li>Tablas</li>			
+<li>Formularios</li>
+<li>Maquetado en HTML5</li>
+<li>Nuevos elementos multimedia</li>
+</ol>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Requisitos para trabajar ---------------------->
+<div class="slide">
+<h1>Requisitos para trabajar</h1>
+<ul class="incremental">
+<li>Editor de texto plano o un editor HTML como 
+   <a href="http://bluefish.openoffice.nl/index.html" 
+      title="Página Oficial de Bluefish">Bluefish</a></li>
+<li>Navegadores que funcionen bien y cumplan con los estándares: 
+   <a href="http://www.google.com.tw/chrome?hl=es" 
+      title="Página Oficial de Chrome">Chrome</a>, 
+   <a href="http://www.mozilla.org/en-US/firefox/new/" 
+      title="Página Oficial de Firefox">Firefox</a>, 
+   <a href="http://www.opera.com/download/" 
+      title="Página Oficial de Opera">Opera</a></li>
+<li>Un navegador que funcione mal y no cumpla con los estándares</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- HTML ---------------------->
+<div class="slide">
+<h1>HTML</h1>
+<ul class="incremental">
+<li><strong>H</strong>yperText <strong>M</strong>arkup <strong>L</strong>anguage. 
+Es la quinta revisión la cual es regulada por el Consorcio W3C </li>
+<li>Es un lenguaje semántico, lo que quiere decir que no definimos el aspecto de 
+las cosas, sino lo que significan.</li>
+<li>En el título de la página, en lugar de decir <em>"Lo quiero grande en letras 
+rojas"</em>, le indicamos al navegador que <em>"Este es el título principal de 
+la página. Haz algo para que destaque"</em>.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- CSS ---------------------->
+<div class="slide">
+<h1>CSS</h1>
+<ul class="incremental">
+<li>CSS son las siglas de <strong>C</strong>ascading <strong>S</strong>tyle 
+<strong>S</strong>heets y son un regalo del cielo. Si el documento HTML está 
+bien estructurado, podemos cambiar totalmente su apariencia sin tocar una sola 
+línea de código en el archivo .html.</p>
+<li>Esto nos permite <strong>separar el contenido del aspecto</strong>, y es de 
+gran importancia.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Etiquetas en HTML ---------------------->
+<div class="slide">
+<h1>Etiquetas en HTML</h1>
+<ul class="incremental">
+<li>HTML está basado en etiquetas. Una etiqueta tiene la siguiente forma:</li>
+<li class="off"><pre><code>&lt;etiqueta&gt; Algo aquí dentro &lt;/etiqueta&gt;
+</code></pre></li>
+<li>La etiqueta para poner el título principal en la página es &lt;h1&gt;.	
+Entonces nos quedará:</li>
+<li class="off"><pre><code>&lt;h1&gt; Este es un título &lt;/h1&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Etiquetas en HTML ---------------------->
+<div class="slide">
+<h1>Etiquetas en HTML</h1>
+<ul class="incremental">
+<li>Como ves, &lt;h1&gt; marca el inicio de la etiqueta, mientras que &lt;/h1&gt; 
+se encarga de cerrarla</li>
+<p>Hay etiquetas que pueden modificarse mediante atributos. Su estructura es la 
+siguiente:</li>
+<li class="off"><pre><code>&lt;etiqueta atributo="valor"&gt;
+</code></pre></li>
+<li>Por ultimo, comentar un par de reglas que siguen las etiquetas:</li>
+<ul>
+<li>Siempre en minúsculas</li>
+<li>Los atributos entre comillas</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<li>El DOCTYPE</li>
+<ul><li>Esta declaración debe ser lo primero en un documento HTML. No es un tag de 
+HTML, es una instrucción para indicarle al navegador en que versión de HTML esta 
+escrito el documento.</li></ul>
+<li class="off"><pre><code>&lt;!DOCTYPE html&gt;
+</code></pre></li>
+<li>La raíz HTML</li>
+<ul><li>Es el contenedor de todos los elementos HTML. Se puede/debe llevar la etiqueta 
+lang para indicar el lenguaje en el cual esta el contenido del documento.</li></ul>
+<li class="off"><pre><code>&lt;html lang="es"&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<li>La cabecera</li>
+<ul><li>Es un contenedor para todos los elementos cabecera.</li></ul>
+<li>El elemento &lt;head&gt; debe incluir el título del documento y puede incluir 
+scripts, estilos, meta información y mas.</li>
+<li>Los elementos utilizados dentro de &lt;head&gt; son:</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Cabecera del documento HTML5 ---------------------->
+<div class="slide">
+<h1>Cabecera del documento HTML5</h1>
+<ul class="incremental">
+<li>&lt;title&gt; Es obligatoria</li>
+<li>&lt;style&gt; Se usa para definir los estilos para el documento, es decir el 
+CSS. Lleva el atributo type con el valor text/css</li>
+<li>&lt;base&gt; Cambia la dirección base de las direcciones y la carga de 
+archivos. Se puede especificar el lugar de apertura para las URL con el atributo 
+target y los valores _blank, _self, _parent y _top </li>
+<li>&lt;link&gt; Se utiliza para hacer la carga de archivos externos. Utiliza 
+los atributos: rel para indicar la relación, type para especificar el tipo de 
+documento, href para indicar la ubicación.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Cabecera del documento HTML5 ---------------------->
+<div class="slide">
+<h1>Cabecera del documento HTML5</h1>
+<ul class="incremental">
+<li>&lt;meta&gt; Funciona para otorgar información de los datos del documento. 
+Debe tener el atributo name para indicar el nombre del metadato y los otros 
+valores a otorgar son charset, content y http-equiv.</li>
+<li>&lt;script&gt; Permite introducir scripts para su uso dentro del documento. 
+Lleva el atributo type donde se indica el tipo de script.</li>
+<li>&lt;noscript&gt; Mostrará el contenido dentro de estas etiquetas en caso de 
+que el navegador no soporte los scripts.</li>			
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<h2>El cuerpo</h2>
+<li>Contiene todo el código que se debe mostrar dentro del navegador.</li>
+<li class="off"><pre><code>&lt;body&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<li>Por último deberemos cerrar las etiquetas del body y de html.</li>
+<li class="off"><pre><code>&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+   &lt;title&gt;Título de la página&lt;/title&gt;
+   &lt;style type="text/css"&gt;
+      h1 {color:red}
+      p {color:blue}
+   &lt;/style&gt;
+   &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+   &lt;meta name="description" content="Taller de HTML5" /&gt;
+   &lt;meta name="keywords" content="HTML5, Taller, CUCEI, DivecFest" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Estructura del documento HTML 5 ---------------------->
+<div class="slide">
+<h1>Estructura del documento HTML 5</h1>
+<ul class="incremental">
+<li class="off"><pre><code>   &lt;meta name="author" content="Michelle Torres" /&gt;
+   &lt;meta charset="UTF-8" /&gt;&lt;script type="text/javascript"&gt;
+      document.write("Hello World!")
+   &lt;/script&gt;
+   &lt;noscript&gt;Tu navegador no soporta JavaScript!&lt;/noscript&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   Lo escrito aquí aparecerá en el navegador.
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Guardar el archivo ---------------------->
+<div class="slide">
+<h1>Guardar el archivo</h1>
+<ul class="incremental">
+<li>El archivo se debe guardar en formato <strong>html</strong>.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Texto en HTML ---------------------->
+<div class="slide">
+<h1>Texto en HTML</h1>
+<ul class="incremental">
+<li>HTML no cuenta con soporte para algunos símbolos, es por esto que usaremos 
+los símbolos <strong>&</strong> y <strong>;</strong> para denotar el inicio y 
+final respectivamente de un símbolo especial.</li>
+<li>Hay tablas de equivalencias para estos símbolos, a continuación pongo solo algunos:</li>
+<ul>
+<li>&copy; &amp;copy;</li>
+<li>&amp; &amp;amp;</li>
+<li>&lt; &amp;lt;</li>
+<li>&gt; &amp;gt;</li>
+<li>&reg; &amp;reg;</li>
+<li>&frac14; &amp;frac14;</li>
+<li>&frac12; &amp;frac12;</li>
+<li>&frac34; &amp;frac34;</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Párrafos ---------------------->
+<div class="slide">
+<h1>Párrafos</h1>
+<ul class="incremental">
+<li>Los párrafos sirven para estructurar el contenido. En la web funcionan igual 
+que en la vida real: contienen una o más frases con relación entre sí.</li>
+<li>Para crear un párrafo, metemos texto entre las etiquetas 
+<strong>&lt;p&gt;</strong> y <strong>&lt;/p&gt;.</strong></li>
+<li class="off"><pre><code>&lt;p&gt;Este es un párrafo de una línea&lt;/p&gt;
+&lt;p&gt;Este es un que contiene varias lineas y se ajustará 
+al tamaño de su contenedor&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Saltos de linea ---------------------->
+<div class="slide">
+<h1>Saltos de linea</h1>
+<ul class="incremental">
+<li>A veces, dentro de un mismo párrafo necesitamos cambiar de línea. Esto lo 
+conseguimos con la etiqueta <strong>&lt;br /&gt;</strong></li>
+<li class="off"><pre><code>&lt;p&gt;Una linea&lt;br /&gt;
+otra linea&lt;br /&gt;
+una ultima linea&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Títulos ---------------------->
+<div class="slide">
+<h1>Títulos</h1>
+<ul class="incremental">
+<li>Los títulos nos sirven para agrupar información.</li>
+<li>Para conseguir esto, tenemos las etiquetas <strong>&lt;hx&gt;</strong> y 
+<strong>&lt;/hx&gt;</strong>, donde x es un número del 1 al 6. &lt;h1&gt; 
+corresponde al título más importante</li>
+<li class="off"><pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Citas ---------------------->
+<div class="slide">
+<h1>Citas</h1>
+<ul class="incremental">
+<li>Los <strong>blockquotes</strong> sirven para mostrar un bloque que indica 
+que lo que hay en el interior es una cita.</li>
+<li>Las <strong>citas</strong> sirven para indicar el titulo de un trabajo, ya 
+sea un libro, un paper, canción, etc.</li>
+<li class="off"><pre><code>&lt;cite&gt;El Señor de los Anillos&lt;/cite&gt;&lt;blockquote&gt;
+&lt;p&gt;Renovada será la hoja que se ha roto.&lt;/p&gt;&lt;/blockquote&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Énfasis al texto ---------------------->
+<div class="slide">
+<h1>Énfasis al texto</h1>
+<ul class="incremental">
+<li>Para dar énfasis a un texto disponemos de la etiqueta <strong>&lt;em&gt;</strong>. 
+Si queremos dar un énfasis más fuerte, utilizaremos <strong>&lt;strong&gt;</strong>.</li>
+<li class="off"><pre><code>&lt;p&gt;
+  &lt;em&gt;Remarcado&lt;/em&gt; sin remarcar
+  y continua &lt;strong&gt;otro&lt;/strong&gt;.
+&lt;/p&gt;	
+</code></pre></li>
+<li>Los navegadores suelen representar &lt;em&gt; con cursiva y &lt;strong&gt; 
+con negrita.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Texto preformateado ---------------------->
+<div class="slide">
+<h1>Texto preformateado</h1>
+<ul class="incremental">
+<li>Recordemos que HTML ignora espacios en blanco consecutivos, tabuladores, 
+saltos de línea etc.</li>
+<li>Si nos interesa que estas cosas se tengan en cuenta, tenemos la etiqueta &lt;pre&gt;</li>
+<li class="off"><pre><code>&lt;pre&gt;
+   Este texto mostrará la tabulación
+Este será otro renglón
+   Todo estos espacios        también aparecerán
+&lt;/pre&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Acrónimos y abreviaturas ---------------------->
+<div class="slide">
+<h1>Acrónimos y abreviaturas</h1>
+<ul class="incremental">
+<li>Para explicar el significado de los acrónimos y abreviaturas usaremos 
+<strong>&lt;abbr&gt;</strong>.</li>
+<li>El efecto es: al pasar el ratón por encima de la palabra, nos aparece un 
+rectángulo de ayuda con lo que significan.</li>
+<li>Necesita un atributo para funcionar, y es <strong>title</strong>.</li>
+<li class="off"><pre><code>&lt;p&gt;
+Mi computadora tiene 6 &lt;abbr title="Gigabytes"&gt;GB&lt;/abbr&gt; 
+de memoria &lt;abbr title="Random Access Memory"&gt;RAM&lt;/abbr&gt;.
+&lt;/p&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Etiquetas de frases ---------------------->
+<div class="slide">
+<h1>Etiquetas de frases</h1>
+<ul class="incremental">
+<li>Existen otras etiquetas que nos ayudarán a indicar el tipo de contenido 
+dentro de las mismas.</li>
+<ul>
+   <li>&lt;dfn&gt;	Definición de un término</li>
+   <li>&lt;code&gt;	Sección de código de computadora</li>
+   <li>&lt;samp&gt;	Ejemplo de salida de un código</li>
+   <li>&lt;kbd&gt;	Entrada de teclado</li>
+   <li>&lt;var&gt;	Variables</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Definición de un término ---------------------->
+<div class="slide">
+<h1>Definición de un término</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;Un &lt;dfn&gt;archivo de hojas de estilo en cascada&lt;/dfn&gt; 
+es un documento con atributos presentacionales agrupados en clases.&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Sección de código de computadora ---------------------->
+<div class="slide">
+<h1>Sección de código de computadora</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;La función siguiente muestra un mensaje al usuario:&lt;/p&gt;
+&lt;code&gt;
+function mostrarMsj(msj)&lt;br /&gt;
+{&lt;br /&gt;
+ alert("El mensaje es: "+msj);&lt;br /&gt;
+ mostrado = true;&lt;br /&gt;
+}&lt;br /&gt;
+&lt;/code&gt;
+&lt;p&gt;Pero para que funcione correctamente necesitas declarar 
+primero la variable global "&lt;code&gt;var mostrado = false;&lt;/code&gt;".&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Ejemplo de salida de un código ---------------------->
+<div class="slide">
+<h1>Ejemplo de salida de un código</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;Cuando presionas la tecla "enter", el programa procesa 
+la información y muestra los resultados. En este caso el mensaje 
+fue: &lt;samp&gt;La operación ha retornado falso&lt;/samp&gt;&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Entrada de teclado ---------------------->
+<div class="slide">
+<h1>Entrada de teclado</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;Para ejecutar el comando ingrese "&lt;kbd&gt;exec -c&lt;/kbd&gt;" 
+en el símbolo de sistema.&lt;/p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Variables ---------------------->
+<div class="slide">
+<h1>Variables</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;El resultado de la operación se ha guardado en la variable 
+"&lt;var&gt;result_var&lt;/var&gt;" antes de la salida.&lt;p&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Enlaces ---------------------->
+<div class="slide">
+<h1>Enlaces</h1>
+<ul class="incremental">
+<li>Los enlaces son ligas a otras páginas las cuales pueden ser</li>
+<ul>
+   <li>Internas</li>
+   <li>Externas</li>
+   <li>A una sección en la misma página</li>
+   <li>A un correo</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Enlace A una página externa ---------------------->
+<div class="slide">
+<h1>Enlace a una página externa</h1>
+<ul class="incremental">
+<li>Si queremos un link a una página que está en otro servidor, usamos &lt;a&gt; 
+de esta forma:</li>
+<li class="off"><pre><code>&lt;a href="http://www.loquesea.com"&gt;
+Texto del enlace
+&lt;/a&gt;
+</code></pre></li>
+<li>Cuando queremos indicar en donde se abrirá esa página utilizamos el atributo 
+target, donde los posibles valores son los mismos vistos en la etiqueta 
+&lt;base&gt; _blank, _parent, _self y _top</li>
+<li class="off"><pre><code>&lt;a href="http://www.google.com" target="_blank"&gt;
+Google en otra ventana
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Enlace A una página local ---------------------->
+<div class="slide">
+<h1>Enlace a una página local</h1>
+<ul class="incremental">
+<li>Se utiliza la misma etiqueta &lt;a&gt; y se indica la ruta del archivo en 
+el mismo servidor</li>
+<li class="off"><pre><code>&lt;a href="otro.html" target="_blank"&gt;
+Otra pagina
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Enlace a un correo electrónico ---------------------->
+<div class="slide">
+<h1>Enlace a un correo electrónico</h1>
+<ul class="incremental">
+<li>Podemos hacer un enlace que al pulsar sobre él, se abra automáticamente una 
+ventana del cliente de correo electrónico que tenga el usuario para que escriba 
+un mensaje a esa dirección.</li>
+<li>Se utiliza la misma etiqueta &lt;a&gt; y se indica el correo electrónico</li>
+<li class="off"><pre><code>&lt;a href="mailto:correo@servidor.com"&gt;
+Contacto
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Enlace en la misma página ---------------------->
+<div class="slide">
+<h1>Enlace en la misma página</h1>
+<ul class="incremental">
+<li>Las anclas nos permiten enlazar a una posición concreta de la página.</li>
+<li>En el punto al que queremos saltar, insertamos un ancla (usamos el atributo 
+id):</li>
+<li class="off"><pre><code>&lt;a id="nombre_ancla" /&gt;
+</code></pre></li>
+<li>Para crear un link que nos lleve a esa ancla:</li>
+<li class="off"><pre><code>&lt;a href="#nombre_ancla"&gt;
+Texto del enlace
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas ---------------------->
+<div class="slide">
+<h1>Listas</h1>
+<ul class="incremental">
+<li>Cuando necesitamos presentar en un texto una serie de conceptos o ideas 
+utilizamos listas.</li>
+<li>Las listas pueden ser ordenadas o no serlo. Las que no son ordenadas, a cada 
+término se le antepone una viñeta. Las ordenadas tienen un número en cada término.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas desordenadas ---------------------->
+<div class="slide">
+<h1>Listas desordenadas</h1>
+<ul class="incremental">
+<li>La etiqueta &lt;ul&gt; indica al navegador que cree una lista con viñetas 
+no ordenada. La etiqueta &lt;li&gt; indica que ese es un ítem de la lista</li>
+<li class="off"><pre><code>&lt;ul&gt;
+  &lt;li&gt;Esto es un punto.&lt;/li&gt;
+  &lt;li&gt;Este es otro.&lt;/li&gt;
+  &lt;li&gt;Y este es otro diferente.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas ordenadas ---------------------->
+<div class="slide">
+<h1>Listas ordenadas</h1>
+<ul class="incremental">
+<li>La etiqueta &lt;ol&gt; indica al navegador que cree una lista numerada. Al 
+igual que con las listas desordenadas, se utiliza la etiqueta &lt;li&gt; para 
+cada ítem de la lista</li>
+<li class="off"><pre><code>&lt;ol&gt;
+  &lt;li&gt;Esto es el numero 1.&lt;/li&gt;
+  &lt;li&gt;Este sería el 2&lt;/li&gt;
+  &lt;li&gt;Y por último el 3&lt;/li&gt;
+&lt;/ol&gt
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas ordenadas ---------------------->
+<div class="slide">
+<h1>Listas ordenadas</h1>
+<ul class="incremental">
+<li>Dento de la etiqueta &lt;li&gt; se utiliza el atributo value para indicar en 
+que número se pondrá la numeración</li>
+<li class="off"><pre><code>&lt;ol&gt;
+   &lt;li value="20"&gt;Este sera el numero 20. &lt;/li&gt;
+   &lt;li&gt;Este sera el 21. &lt;/li&gt;
+   &lt;li&gt;Este sera el 22. Y asi sucesivamente. &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas de definición ---------------------->
+<div class="slide">
+<h1>Listas de definición</h1>
+<ul class="incremental">
+<li>Las listas de definición se diferencian de las anteriores en que cada "ítem" 
+está compuesto por un par de elementos: un término y su definición.</li>
+<li>Se usan estas etiquetas: &lt;dl&gt; para marcar la lista, &lt;dt&gt; para un 
+término y &lt;dd&gt; para su definición.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Listas de definición ---------------------->
+<div class="slide">
+<h1>Listas de definición</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;dl&gt;
+   &lt;dt&gt;
+      &lt;abbr title="Hoja de estilos en cascada" &gt;CSS&lt;/abbr&gt;
+   &lt;/dt&gt;
+   &lt;dd&gt;
+      Son conjuntos de instrucciones, a veces en forma 
+      de archivo anexo, que se asocian a los archivos 
+      de texto y se ocupan de los aspectos de formato 
+      y de presentación de los contenidos
+   &lt;/dd&gt;
+&lt;/dl&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Imágenes ---------------------->
+<div class="slide">
+<h1>Imágenes</h1>
+<ul class="incremental">
+<li>Podemos usar tres formatos de imagen: GIF, JPEG y PNG.</li>
+<li>El <strong>JPEG</strong> es el más adecuado para imágenes con muchos colores, 
+como fotografías, y que no tengan grandes áreas de colores planos.</li>
+<li>Las imágenes <strong>GIF</strong> son de sólo 8 bits (256 colores), pero 
+podemos usar un color transparente.</li>
+<li>El formato <strong>PNG</strong> es el estándar y podemos elegir varias 
+profundidades de paleta (número de colores). Además, podemos utilizar un canal 
+alpha para crear transparencias.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Imágenes ---------------------->
+<div class="slide">
+<h1>Imágenes</h1>
+<ul class="incremental">
+<li>Para poner una imagen hacemos uso de la etiqueta &lt;img&gt; con unos cuantos 
+atributos:</li>
+<li class="off"><pre><code>&lt;img src="image.gif" width="ancho"
+height="alto" alt="descripcion" /&gt;
+</code></pre></li>
+<li>Los atributos width y height nos permiten establecer el ancho y el alto de 
+la imagen.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Imágenes ---------------------->
+<div class="slide">
+<h1>Imágenes</h1>
+<ul class="incremental">
+<li>Podemos indicar un valor en píxeles o en tanto por ciento.</li>
+<li>width="200" muestra la imagen con 200 píxeles de ancho</li>
+<li>width="200%" hace que se vea al doble de su anchura original.</li>
+<li>Es conveniente que pongamos las dimensiones en píxeles reales, ya que 
+ahorramos tiempo al navegador a la hora de <strong>maquetar</strong> la página.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Imágenes como links ---------------------->
+<div class="slide">
+<h1>Imágenes como links</h1>
+<ul class="incremental">
+<li>Ya hemos visto como generar links, y como cargar imágenes. Ahora combinemos 
+estas dos cosas.</li>
+<li class="off"><pre><code>&lt;a href="http://pagina.com"&gt;
+	&lt;img src="banner.gif" width="200" height="40"
+	alt="Imagen banner" /&gt;
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Thumbnails ---------------------->
+<div class="slide">
+<h1>Thumbnails</h1>
+<ul class="incremental">
+<li>Thumbnail es una imagen más pequeña que la original, de modo que al hacer 
+clic sobre ella, cargamos la imagen a tamaño completo.</li>
+<li class="off"><pre><code>&lt;a href="matrix.jpg" title="Wallpaper de Trinity"&gt;
+&lt;img src="matrix.jpg" width="100" height="50" 
+alt="Trinity" /&gt;
+&lt;/a&gt;
+</code></pre></li>
+<li>Si nuestro wallpaper de Trinity ocupa 100Kb (o más), tendremos esos 100Kb 
+¡como thumbnail!</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Thumbnails ---------------------->
+<div class="slide">
+<h1>Thumbnails</h1>
+<ul class="incremental">
+<li>Tenemos que escalar la imagen y guardar esta copia más pequeña (de 5Kb, por ejemplo):</li>
+<li class="off"><pre><code>&lt;a href="matrix.jpg" title="Wallpaper de Trinity"&gt;
+&lt;img src="matrix_thumb.jpg" width="100" height="50" 
+alt="Trinity" /&gt;
+&lt;/a&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Tablas ---------------------->
+<div class="slide">
+<h1>Tablas</h1>
+<ul class="incremental">
+<li>Las tablas en HTML utilizan varias etiquetas las cuales se describen a 
+continuación</li>
+<li><strong>&lt;table&gt;</strong> Crea una nueva tabla. Se utiliza el atributo 
+<strong>border</strong> para indicar el ancho de los bordes.</li>
+<li><strong>&lt;caption&gt;</strong> Asigna un título a la tabla</li>
+<li><strong>&lt;thead&gt;</strong> Genera una espacio para indicar el encabezado 
+de la tabla. Aquí dentro se deberán crear las filas y celdas requeridas</li>
+<li><strong>&lt;tbody&gt;</strong> Genera una espacio para indicar el cuerpo de 
+la tabla. Aquí dentro se deberán crear las filas y celdas requeridas. Pueden 
+existir varios body para poder separar por bloques la tabla.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Tablas ---------------------->
+<div class="slide">
+<h1>Tablas</h1>
+<ul class="incremental">
+<li><strong>&lt;tfoot&gt;</strong> Genera una espacio para indicar el pie de la 
+tabla. Actúa de la misma manera que el thead</li>
+<li><strong>&lt;tr&gt;</strong> Crea una fila</li>
+<li><strong>&lt;th&gt;</strong> Crea una celda de encabezamiento</li>
+<li><strong>&lt;td&gt;</strong> Crea una celda</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Tablas ---------------------->
+<div class="slide">
+<h1>Tablas</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;table&gt;
+	&lt;caption&gt;Tabla&lt;/caption&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Nombre&lt;/th&gt;
+			&lt;th&gt;Celular&lt;/th&gt;
+			&lt;th&gt;Correo&lt;/th&gt;
+		&lt;/tr&gt;	
+	&lt;/thead&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Tablas ---------------------->
+<div class="slide">
+<h1>Tablas</h1>
+<ul class="incremental">
+<li class="off"><pre><code>	&lt;tbody&gt;
+	    &lt;tr&gt;
+			&lt;td&gt;Juan&lt;/td&gt;
+			&lt;td&gt;bla&lt;/td&gt;
+			&lt;td&gt;bla&lt;/td&gt;
+	    &lt;/tr&gt;
+	    &lt;tr&gt;
+			&lt;td&gt;Pedro&lt;/td&gt;
+			&lt;td&gt;ble&lt;/td&gt;
+			&lt;td&gt;ble&lt;/td&gt;
+	    &lt;/tr&gt;
+	 &lt;/tbody&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Tablas ---------------------->
+<div class="slide">
+<h1>Tablas</h1>
+<ul class="incremental">
+<li class="off"><pre><code>	 &lt;tbody&gt;
+	    &lt;tr&gt;
+			&lt;td&gt;Maria&lt;/td&gt;
+			&lt;td&gt;abc&lt;/td&gt;
+			&lt;td&gt;abc&lt;/td&gt;
+	    &lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Grupos de columnas ---------------------->
+<div class="slide">
+<h1>Grupos de columnas</h1>
+<ul class="incremental">
+<li>Para motivos de formato, se pueden formar grupos de columnas, la etiqueta es 
+&lt;colgroup&gt; y dentro de esta se utiliza la etiqueta &lt;col&gt; por cada 
+columna. Si se desean juntar varias columnas con una misma característica se 
+utiliza el atributo span.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Grupos de columnas ---------------------->
+<div class="slide">
+<h1>Grupos de columnas</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col span="2" style="background-color:red" /&gt;
+    &lt;col style="background-color:yellow" /&gt;
+  &lt;/colgroup&gt;	
+  &lt;colgroup&gt;
+   &lt;col span="3"&gt;
+   &lt;col id="dame-un-formato-especial"&gt;
+  &lt;/colgroup&gt;
+  
+  ...
+  
+&lt;/table&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Fusionar celdas ---------------------->
+<div class="slide">
+<h1>Fusionar celdas</h1>
+<ul class="incremental">
+<li>Podemos fusionar celdas de forma horizontal con el atributo 
+<strong>colspan</strong></li>
+<li class="off"><pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+	&lt;th colspan="3"&gt;Mi dinero&lt;/th&gt;  
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Mes&lt;/th&gt;
+    &lt;th&gt;Gastos&lt;/th&gt;
+    &lt;th&gt;Ahorros&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Formularios ---------------------->
+<div class="slide">
+<h1>Formularios</h1>
+<ul class="incremental">
+<li>Los formularios están delimitados con la etiqueta &lt;form&gt;, que permite
+reunir varios elementos de un formulario, como botones y casillas de texto.</li>
+<li>La etiqueta form tiene dos atributos muy importantes:</li>
+<ul>
+<li><strong>method</strong> Indica la manera en que serán enviados los valores 
+del formulario. Los métodos permitidos son POST y GET.<br /><strong>POST</strong> 
+Envía los datos de manera oculta. <strong>GET</strong> envía los datos agregándolos 
+a la dirección URL y los separa de la URL base con un signo de interrogación</li>
+<li><strong>action</strong> Indica la ubicación a la cual será enviada la información. 
+Puede ser un correo electrónico  un script, inclusive, otra página HTML</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Formularios ---------------------->
+<div class="slide">
+<h1>Formularios</h1>
+<ul class="incremental">
+<li class="off"><pre><code>
+&lt;form method="post" action="file2.html"&gt;&lt;/form&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Formularios ---------------------->
+<div class="slide">
+<h1>Formularios</h1>
+<ul class="incremental">
+<li>Dentro de un formulario se pueden insertar cualquier elemento HTML como 
+texto, botones, tablas y enlaces</li>
+<li>Sin embargo, los elementos interactivos son los más interesantes.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos interactivos ---------------------->
+<div class="slide">
+<h1>Elementos interactivos</h1>
+<ul class="incremental">
+<li>input</li>
+<ul><li>En esta categoría se encuentran los cuadros de texto, radio button, 
+checkbox, imágenes, carga de archivos, etc. Se recomienda poner un texto para 
+mostrarse como etiqueta por cada input, esto se logra con la etiqueta 
+<strong>&lt;label&gt;</strong></li></ul>
+<li>button</li>
+<ul><li>Son botones a los que se les pueden programar acciones, o utilizar los 
+ya existentes para enviar y resetear.</li></ul>
+<li>textarea</li>
+<ul><li>Es una cuadro de texto multilinea</li></ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos interactivos ---------------------->
+<div class="slide">
+<h1>Elementos interactivos</h1>
+<ul class="incremental">
+<li>select</li>
+<ul><li>Genera una lista desplegable, (o simplemente una lista) la cual lleva 
+varios elementos declarados con la etiqueta <strong>&lt;option&gt;</strong> y 
+estos pueden estar agrupados por medio de la etiqueta <strong>&lt;optgroup&gt;</strong></li></ul>
+<li>fieldset</li>
+<ul><li>Se utiliza para agrupar elementos relacionados en un formulario. Para 
+dar un nombre a este marco se utiliza la etiqueta <strong>&lt;legend&gt;</strong></li></ul>
+<li>output</li>
+<ul><li>Se utiliza para representar el resultado de un calculo, lo cual aún se 
+debe hacer con un script, pero ya de entrada define de donde vienen los datos.</li></ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Los input ---------------------->
+<div class="slide">
+<h1>Los input</h1>
+<ul class="incremental">
+<li>Ya vimos que existen varios tipos de input, y antes de ver cada uno de ellos 
+hablaremos de las propiedades que podemos setear.</li>
+<li>Recordemos que es importante poner un label por cada input, y para esto 
+nuestros input deberán tener un <strong>id</strong> que les identifique</li>
+<li>Igualmente deben tener un <strong>nombre</strong> que identificará su valor al enviarlo por 
+cualquiera de los dos métodos (POST o GET)</li>
+<li class="off"><pre><code>&lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+&lt;input type="text" id="nombre" name="nombre"&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- checkbox ---------------------->
+<div class="slide">
+<h1>checkbox</h1>
+<ul class="incremental">
+<li>Permite al usuario seleccionar uno o mas opciones</li>
+<li class="off"><pre><code>&lt;input type="checkbox" name="transporte" value="Bici" /&gt; 
+Tengo bici&lt;br /&gt;
+&lt;input type="checkbox" name="transporte" value="Carro" /&gt;
+Tengo carro	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- radio ---------------------->
+<div class="slide">
+<h1>radio</h1>
+<ul class="incremental">
+<li>Permite al usuario seleccionar una opción</li>
+<li class="off"><pre><code>&lt;input type="radio" name="transporte" value="Bici" /&gt; Tengo bici&lt;br /&gt;
+&lt;input type="radio" name="transporte" value="Carro" /&gt;Tengo carro
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- date ---------------------->
+<div class="slide">
+<h1>date</h1>
+<ul class="incremental">
+<li>Permite definir fechas, ya sea indicando la zona horaria o sin indicarla con 
+datetime, y datetime-local</li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="bday"&gt;Cumpleaños&lt;/label&gt; 
+&lt;input type="date" id="bday" name="bday" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- month ---------------------->
+<div class="slide">
+<h1>month</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar el mes y el año sin tomar en cuenta la zona 
+horaria.</li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="mesanio"&gt;Ingresa el mes y año de tu cumpleaños&lt;/label&gt;
+&lt;input type="month" id="mesanio" name="mesanio" /&gt;;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- time ---------------------->
+<div class="slide">
+<h1>time</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar una hora</li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="hr"&gt;Ingresa la hora&lt;/label&gt;
+&lt;input type="time" id="hr" name="hr" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- week ---------------------->
+<div class="slide">
+<h1>week</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar un número de semana y el año</li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="wk"&gt;Ingresa la semana y el año&lt;/label&gt;
+&lt;input type="week" id="wk" name="wk" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- email ---------------------->
+<div class="slide">
+<h1>email</h1>
+<ul class="incremental">
+<li>Permite escribir direcciones de correo, las cuales serán validadas al enviar 
+el formulario</li>
+<li>Soportado en Firefox, Chrome y Opera</li>
+<li class="off"><pre><code>&lt;label for="mail"&gt;Correo&lt;/label&gt; 
+&lt;input type="email" id="mail" name="mail" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- file ---------------------->
+<div class="slide">
+<h1>file</h1>
+<ul class="incremental">
+<li>Permite al usuario elegir archivos de su sistema, como el típico botón examinar</li>
+<li class="off"><pre><code>&lt;input id="imagen" name="imagen" type="file"
+accept="image/gif" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- hidden ---------------------->
+<div class="slide">
+<h1>hidden</h1>
+<ul class="incremental">
+<li>Genera un campo no visible para el usuario. Generalmente se utiliza para 
+guardar un valor por default o para guardar un valor generado con un script.</li>
+<li class="off"><pre><code>&lt;input type="hidden" id="country" name="country" value="Norway" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- image ---------------------->
+<div class="slide">
+<h1>image</h1>
+<ul class="incremental">
+<li>Define una imagen con la función de un botón submit</li>
+<li class="off"><pre><code>&lt;input type="image" src="boton.jpg" alt="Enviar" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- number ---------------------->
+<div class="slide">
+<h1>number</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar números. Se pueden definir los números aceptados. 
+Se utilizan los parámetros <strong>min</strong>, <strong>max</strong> y 
+<strong>step</strong></li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="num"&gt;Ingresa un número entre 1 y 5&lt;/label&gt;
+&lt;input type="number" id="num" name="num" min="1" max="5" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- range ---------------------->
+<div class="slide">
+<h1>range</h1>
+<ul class="incremental">
+<li>Control para ingresar un número el cual su valor no debe ser exacto, como en 
+una barra deslizante. Se utilizan los parámetros <strong>min</strong>, 
+<strong>max</strong> y <strong>step</strong></li>
+<li>Soportado en Chrome, Opera y Safari</li>
+<li class="off"><pre><code>&lt;label for="pto"&gt;Elija el puntaje&lt;/label&gt;
+&lt;input type="range" id="pto" name="pto" min="1" max="15" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- password ---------------------->
+<div class="slide">
+<h1>password</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar contraseñas, de modo que los caracteres se 
+mostrarán enmascarados</li>
+<li class="off"><pre><code>&lt;label for="pass"&gt;Ingresa tu contraseña&lt;/label&gt;
+&lt;input type="password" id="pass" name="pass" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- search ---------------------->
+<div class="slide">
+<h1>search</h1>
+<ul class="incremental">
+<li>Cuadro de texto para realizar búsquedas</li>
+<li>Soportado en Chrome y Safari</li>
+<li class="off"><pre><code>&lt;label for="busq"&gt;Búsqueda en google&lt;/label&gt;
+&lt;input type="search" id="busq" name="busq" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- url ---------------------->
+<div class="slide">
+<h1>url</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar direcciones web</li>
+<li>Soportado en Firefox y Chrome</li>
+<li class="off"><pre><code>&lt;label for="web"&gt;Ingrese su página&lt;/label&gt;
+&lt;input type="url" id="web" name="web" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- tel ---------------------->
+<div class="slide">
+<h1>tel</h1>
+<ul class="incremental">
+<li>Cuadro de texto para ingresar teléfonos</li>
+<li>Ningún navegador lo reconoce, pero le servirá para hacer validaciones y 
+formatos en el css</li>
+<li class="off"><pre><code>&lt;label for="phone"&gt;Ingrese tu teléfono&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- text ---------------------->
+<div class="slide">
+<h1>text</h1>
+<ul class="incremental">
+<li>Cuadro de texto por default donde se puede ingresar cualquier valor</li>
+<li class="off"><pre><code>&lt;label for="nombre"&gt;Ingrese su nombre&lt;/label&gt;
+&lt;input type="text" id="nombre" name="nombre" /&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- textarea ---------------------->
+<div class="slide">
+<h1>textarea</h1>
+<ul class="incremental">
+<li>Tienen prácticamente las mismas propiedades vistas para los input y también 
+es necesario utilizar un label por cada textarea</li>
+<li>Contiene una nueva propiedad en HTML5 para indicar si el texto será enviado con 
+ajustes de línea. Esto se logra dando el valor hard a la propiedad <strong>wrap</strong>. 
+Cuando se usa esta propiedad, se deben especificar los valores de cols.</li>
+<li class="off"><pre><code>&lt;label for="textarea"&gt;Etiqueta para el texto&lt;/label&gt;
+&lt;textarea id="textarea" name="textarea" rows="5" cols="50"&gt;Escriba aquí&lt;/textarea&gt;	
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Botones ---------------------->
+<div class="slide">
+<h1>Botones</h1>
+<ul class="incremental">
+<li>Con la etiqueta input también se pueden poner botones, pero se recomienda 
+utilizar la etiqueta button para este propósito.</li>
+<li>Existen tres diferentes tipos de botones</li>
+<ul>
+<li>Los que no hacen nada a menos que se les programa una acción con un script</li>
+<li>El de enviar, llamado submit</li>
+<li>Para blanquear los valores del formulario llamado reset</li>
+</ul>
+<li class="off"><pre><code>&lt;button type="button"&gt;Presioname&lt;/button&gt;		
+&lt;button type="submit"&gt;Enviar&lt;/button&gt;			
+&lt;button type="reset"&gt;Limpiar&lt;/button&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Select ---------------------->
+<div class="slide">
+<h1>Select</h1>
+<ul class="incremental">
+<li>Sirve para crear una lista de elementos que puede ser desplegable 
+(especificados por las etiquetas OPTION u OPTGROUP dentro de ella)</li>
+<li>Los atributos de la etiqueta select son:</li>
+<ul>
+	<li>name: Representa el nombre asociado con la casilla de texto, que permite su 
+	identificación en el par nombre/valor.</li>
+	<li>disabled: Crea un lista desactivada, que aparece atenuada</li>
+	<li>size: Si un elemento SELECT se presenta como una lista con desplazamiento 
+	("scrolled list box"), este atributo especifica el número de filas de la lista 
+	que deberían ser visibles al mismo tiempo.No es preciso que los agentes visuales 
+	presenten un elemento SELECT como una lista ("list box"); pueden usar cualquier 
+	otro mecanismo, como por ejemplo un menú desplegable ("drop-down menu").</li>
+	<li>multiple: Permite al usuario seleccionar varios campos de la lista</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Select ---------------------->
+<div class="slide">
+<h1>Select</h1>
+<ul class="incremental">
+<li>Por cada opción a desplegar en la lista se utiliza la etiqueta &lt;option&gt; 
+la cual puede tener como propiedades <strong>selected</strong> y <strong>value</strong>.</li>
+<li>e pueden además crear grupos de opciones para así clasificarlos con la etiqueta 
+&lt;optgroup&gt;</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Select ---------------------->
+<div class="slide">
+<h1>Select</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;select name="OS"&gt;
+  &lt;option selected value="0"&gt; Elige una opción &lt;/option&gt;
+  &lt;optgroup label="Microsoft"&gt;
+  &lt;option value="1"&gt;Windows Vista&lt;/option&gt;
+   &lt;option value="2"&gt;Windows 7&lt;/option&gt;
+   &lt;option value="3"&gt;Windows XP&lt;/option&gt;
+   &lt;/optgroup&gt;
+   &lt;optgroup label="Linux"&gt;
+		&lt;option value="10"&gt;Fedora&lt;/option&gt;
+		&lt;option value="11"&gt;Debian&lt;/option&gt;
+		&lt;option value="12"&gt;Suse&lt;/option&gt;   
+   &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Validación de formularios ---------------------->
+<div class="slide">
+<h1>Validación de formularios</h1>
+<ul class="incremental">
+<li>Con HTML5 viene la opción de hacer las validaciones de formularios de manera 
+nativa</li>
+<li>Para que un campo no quede vacio deberemos activar el atributo 
+<strong>required</strong></li>
+<li>Igualmente si queremos que alguno de los campos no sea validado, activaremos 
+el atributo <strong>formnovalidate</strong></li>
+<li>Cuando llenas formularios te has dado cuenta que si el navegador lo permite 
+tienes una lista de opciones para autocompletar, eso puede activarse o desactivarse 
+para cada campo con la propiedad <strong>autocomplete</strong></li>
+<li>Si esto no es suficiente, podremos también validar campos por medio de 
+expresiones regulares con la propiedad <strong>pattern</strong>.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Validación de formularios ---------------------->
+<div class="slide">
+<h1>Validación de formularios</h1>
+<ul class="incremental">
+<li>Los elementos pueden ser deshabilitados y también marcados como de solo 
+lectura. Ambos evitan que el usuario pueda modificar el contenido, la diferencia 
+reside en que los campos deshabilitados no pueden ser seleccionados, mientras que 
+los de solo lectura si pueden ser seleccionados.</li>
+<li>Los atributos son <strong>readonly</strong> y <strong>disabled</strong></li>
+<li><strong>maxlenght</strong> se utiliza para especificar la cantidad máxima de 
+caracteres permitidos</li>
+<li>Cuando se requiere que el campo ya tenga un valor por default se utiliza el 
+atributo <strong>value</strong></li>
+<li>HTML 5 introduce el atributo <strong>list</strong> 
+para indicar opciones predefinidas para el input, aunque no es soportado en 
+muchos navegadores.</li>
+<li>Se cuanta tambien con la propiedad <strong>placeholder</strong> la cual 
+mostrará un texto de ejemplo a lo que deseamos que el usuario escriba, y cuando 
+el elemento obtenga el foco, este texto se borrará.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Validación de formularios ---------------------->
+<div class="slide">
+<h1>Validación de formularios</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;-- Acepta solo 5 números, es un campo obligatorio y muestra un texto de ejemplo --&gt;
+&lt;label for="cp"&gt;Ingrese su CP&lt;/label&gt; 
+&lt;input type="text" id="cp" pattern="[d]{5}" required="required" placeholder="Ejemplo: 45450" /&gt; 
+
+&lt;-- Campo que permite máximo de 10 caracteres --&gt;
+&lt;label for="cel"&gt;Ingrese su Celular&lt;/label&gt; 
+&lt;input type="text" id="cel" maxlength="10" /&gt; 
+
+&lt;-- Campo con un valor ya escrito --&gt;
+&lt;label for="cel"&gt;Ingrese su Celular&lt;/label&gt; 
+&lt;input type="text" id="cel" value="1098762896" /&gt; 
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+
+<!----------------------- Maquetado en HTML5 ---------------------->
+<div class="slide">
+<h1>Maquetado en HTML5</h1>
+<ul class="incremental">
+<li>Surgen nuevos elementos que dan mayor significado, coherencia y estandarización 
+a nuestras estructuras web:</li>
+<ul>
+	<li><strong>header</strong>: cabecera.</li>
+	<li><strong>article</strong>: artículo publicado.</li>
+	<li><strong>section</strong>: sección de la página dentro de la cual pueden haber artículos.</li>
+	<li><strong>footer</strong>: pie de página.</li>
+	<li><strong>nav</strong>: menú de navegación.</li>
+	<li><strong>aside</strong>: barra lateral o sidebar.</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Maquetado en HTML5 ---------------------->
+<div class="slide">
+<h1>Maquetado en HTML5</h1>
+<p style="text-align: center;">
+<img src="img/comparativa.png" alt="Comparativa HTML4 y HTML5" />
+</p>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Maquetado en HTML5 ---------------------->
+<div class="slide">
+<h1>Maquetado en HTML5</h1>
+<p style="text-align: center;">
+<img src="img/html5-2.jpg" alt="Maquetado en HTML5" />
+</p>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Maquetado en HTML5 ---------------------->
+<div class="slide">
+<h1>Maquetado en HTML5</h1>
+<ul class="incremental">
+<li>Entre otros elementos tenemos también:</li>
+<ul>
+	<li><strong>hgroup</strong>: grupo de titulos.</li>
+	<li><strong>figure</strong>: figura que hace referencia importante al contenido.</li>
+	<li><strong>figcaption</strong>: título de la figura a la que se hace referencia.</li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Etiqueta hgroup ---------------------->
+<div class="slide">
+<h1>Etiqueta hgroup</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;article&gt;
+    &lt;hgroup&gt;
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        &lt;h2&gt;Heading 2&lt;/h2&gt;
+        &lt;h3&gt;Heading 3&lt;/h3&gt;
+    &lt;/hgroup&gt;
+&lt;/article&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Etiqueta figure ---------------------->
+<div class="slide">
+<h1>Etiqueta figure</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;p&gt;Como podemos ver en este artículo la referencia principal a una nueva etiqueta HTML5 y es parte de los nuevos standares Web 2.0 como puede ver en el gráfico a continuación &lt;/p&gt;
+&lt;figure id="figura1"&gt;
+&lt;figcaption&gt;Tabla de standares Web&lt;/figcaption&gt;
+&lt;img src="images/tabla-de-standares-web20.png" width="200" height="400" alt="tabla de standares"  /&gt;
+&lt;/figure&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+
+<!----------------------- Soporte en IE ---------------------->
+<div class="slide">
+<h1>Soporte en IE</h1>
+<ul class="incremental">
+<li>Para dar soporte a IE a algunas de las etiquetas de bloque de HTML5 se debe hacer lo siguiente</li>
+<li class="off"><pre><code>&lt;!--[if lt IE 9]&gt;
+&lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos multimedia ---------------------->
+<div class="slide">
+<h1>Elementos multimedia</h1>
+<ul class="incremental">
+<li>Hasta la fecha dependíamos de una tecnología de terceros para poder compartir 
+material audiovisual: Flash de la compañía Adobe.</li>
+<li>Es evidente que es una barrera de entrada que un usuario no pueda visualizar 
+en primera instancia todo este contenido hasta que instale en su navegador el 
+plugin flash correspondiente.</li>
+<li>De modo que ahora tenemos dos nuevas etiquetas para la carga de material 
+multimedia:</li>
+<ul>
+	<li>video</li>
+	<li>audio</li>					
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos multimedia ---------------------->
+<div class="slide">
+<h1>Elementos multimedia</h1>
+<ul class="incremental">
+<li>Las propiedades que utilizan son:</li>
+<ul>
+	<li>autobuffer : permite la carga automática del archivo, y los valores posibles son “true” o “false”</li>
+	<li>autoplay : reproduce automáticamente</li>
+	<li>controls : muestra los controles de reproducción</li>
+	<li>height : define la altura del reproductor (en píxeles)</li>
+	<li>loop : ejecuta la reproducción en bucle, cuando finaliza vuelve a empezar</li>
+	<li>src : URL del archivo o fuente a reproducir</li>
+	<li>type : tipo de archivo o fuente</li>
+	<li>width : define el ancho del reproductor (en píxeles)</li>
+</ul>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos multimedia ---------------------->
+<div class="slide">
+<h1>Ejemplo de carga de audio</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;audio controls="controls"&gt;
+  &lt;source src="sound.ogg" type="audio/ogg" /&gt;
+  &lt;source src="sound.mp3" type="audio/mp3" /&gt;
+  Tu navegador no soporta reproducción de audio sin necesidad de un plugin
+&lt;/audio&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!----------------------- Elementos multimedia ---------------------->
+<div class="slide">
+<h1>Ejemplo de carga de video</h1>
+<ul class="incremental">
+<li class="off"><pre><code>&lt;video width="320" height="240" controls="controls"&gt;
+  &lt;source src="movie.mp4" type="video/mp4" /&gt;
+  &lt;source src="movie.ogg" type="video/ogg" /&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+</code></pre></li>
+</ul>
+<div class="handout"></div>
+</div>
+
+<!--------------- Dudas  ---------------------->
+<div class="slide">
+<h1>Dudas</h1>
+<p style="text-align: center;"> 
+<img src="img/question-mark.jpg" alt="" title="Preguntas?" /> 
+</p> 
+<div class="handout"></div></div>
+
+<!--------------- Retroalimentación  ---------------------->
+<div class="slide">
+<h1>Retroalimentación</h1>
+<p style="text-align: center;"> 
+<img src="img/megafono2.jpg" alt="" title="Retroalimentación" /> 
+</p> 
+<div class="handout"></div></div>
+
+<!--------------- Referencias  ---------------------->
+<div class="slide">
+<h1>Referencias</h1>
+<ul class="incremental">
+<li><a href="http://www.w3schools.com/html5/">Documentación de HTML5</a></li>
+<li><a href="www.w3.org/">Consorcio de la world wide web</a></li>
+</ul>
+<div class="handout"></div></div>
+
+<!--------------- Contacto  ---------------------->
+<div class="slide">
+<h1>Contacto</h1>
+<ul class="incremental">
+<li><a href="https://twitter.com/nmicht">@nmicht</a> Twitter</li>
+<li><a href="http://www.facebook.com/lic.nancy.torres">Michelle Torres</a> Facebook</li>
+<li><a href="mailto: lic.nancy.torres@gmail.com">lic.nancy.torres@gmail.com</a></li>
+</ul>
+<div class="handout"></div></div>
+
+
+</div>
+
+
+</body>
+</html>
