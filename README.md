@@ -1,4 +1,4 @@
-tallerhtml5
+Aprendiendo HTML5 en 3,2,1
 ===========
 
-Aprendiendo HTML5 en 3,2,1
+Taller de HTML5
